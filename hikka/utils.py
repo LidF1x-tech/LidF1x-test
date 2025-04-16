@@ -756,7 +756,7 @@ async def asset_channel(
 
     # legacy heroku / hikka chats conversion to heroku
     if title.startswith("hikka-"):
-        title = title.replace("hikka-", "heroku-")
+        title = title.replace("hikka-", "lidf1x-")
 
     async for d in client.iter_dialogs():
         if d.title == title:

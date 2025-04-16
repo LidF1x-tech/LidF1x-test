@@ -329,11 +329,11 @@ class UpdaterMod(loader.Module):
                             )
                             if dialog.name
                             in {
-                                "heroku-logs",
-                                "heroku-onload",
-                                "heroku-assets",
-                                "heroku-backups",
-                                "heroku-acc-switcher",
+                                "lidf1x-logs",
+                                "lidf1x-onload",
+                                "lidf1x-assets",
+                                "lidf1x-backups",
+                                "lidf1x-acc-switcher",
                                 "silent-tags",
                             }
                             and dialog.is_channel

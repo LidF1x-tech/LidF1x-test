@@ -77,18 +77,18 @@ class LidFaxSettingsMod(loader.Module):
             if (
                 dialog.name
                 in {
-                    "heroku-logs",
-                    "heroku-onload",
-                    "heroku-assets",
-                    "heroku-backups",
-                    "heroku-acc-switcher",
+                    "lidf1x-logs",
+                    "lidf1x-onload",
+                    "lidf1x-assets",
+                    "lidf1x-backups",
+                    "lidf1x-acc-switcher",
                     "silent-tags",
                 }
                 and dialog.is_channel
                 and (
                     dialog.entity.participants_count == 1
                     or dialog.entity.participants_count == 2
-                    and dialog.name in {"heroku-logs", "silent-tags"}
+                    and dialog.name in {"lidf1x-logs", "silent-tags"}
                 )
                 or (
                     self._client.loader.inline.init_complete

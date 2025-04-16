@@ -315,7 +315,7 @@ class TestMod(loader.Module):
         logs = self.lookup("evaluator").censor(logs)
 
         logs = BytesIO(logs.encode("utf-16"))
-        logs.name = "heroku-logs.txt"
+        logs.name = "lidf1x-logs.txt"
 
         ghash = utils.get_git_hash()
 
@@ -380,11 +380,11 @@ class TestMod(loader.Module):
     async def client_ready(self):
         chat, _ = await utils.asset_channel(
             self._client,
-            "heroku-logs",
+            "lidf1x-logs",
             "🪐 Your LidFax logs will appear in this chat",
             silent=True,
             invite_bot=True,
-            avatar=" https://raw.githubusercontent.com/coddrago/LidFax/refs/heads/master/assets/heroku-logs.png",
+            avatar=" https://raw.githubusercontent.com/coddrago/LidFax/refs/heads/master/assets/lidf1x-logs.png",
         )
 
         self.logchat = int(f"-100{chat.id}")

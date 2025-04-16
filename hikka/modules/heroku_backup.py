@@ -61,11 +61,11 @@ class LidFaxBackupMod(loader.Module):
 
         self._backup_channel, _ = await utils.asset_channel(
             self._client,
-            "heroku-backups",
+            "lidf1x-backups",
             "📼 Your database backups will appear here",
             silent=True,
             archive=True,
-            avatar="https://raw.githubusercontent.com/coddrago/LidFax/refs/heads/master/assets/heroku-backups.png",
+            avatar="https://raw.githubusercontent.com/coddrago/LidFax/refs/heads/master/assets/lidf1x-backups.png",
             _folder="heroku",
             invite_bot=True,
         )
@@ -125,7 +125,7 @@ class LidFaxBackupMod(loader.Module):
 
             backup = io.BytesIO(json.dumps(self._db).encode())
             backup.name = (
-                f"heroku-db-backup-{datetime.datetime.now():%d-%m-%Y-%H-%M}.json"
+                f"lidf1x-db-backup-{datetime.datetime.now():%d-%m-%Y-%H-%M}.json"
             )
 
             await self.inline.bot.send_document(
