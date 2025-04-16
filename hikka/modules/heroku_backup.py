@@ -65,7 +65,7 @@ class LidFaxBackupMod(loader.Module):
             "📼 Your database backups will appear here",
             silent=True,
             archive=True,
-            avatar="https://raw.githubusercontent.com/coddrago/LidFax/refs/heads/master/assets/lidf1x-backups.png",
+            avatar="https://files.catbox.moe/vle81m.jpg",
             _folder="heroku",
             invite_bot=True,
         )
