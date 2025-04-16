@@ -24,10 +24,10 @@ logger = logging.getLogger(__name__)
 
 
 @loader.tds
-class HerokuBackupMod(loader.Module):
+class LidFaxBackupMod(loader.Module):
     """Handles database and modules backups"""
 
-    strings = {"name": "HerokuBackup"}
+    strings = {"name": "LidFaxBackup"}
 
     async def client_ready(self):
         if not self.get("period"):
@@ -65,7 +65,7 @@ class HerokuBackupMod(loader.Module):
             "📼 Your database backups will appear here",
             silent=True,
             archive=True,
-            avatar="https://raw.githubusercontent.com/coddrago/Heroku/refs/heads/master/assets/heroku-backups.png",
+            avatar="https://raw.githubusercontent.com/coddrago/LidFax/refs/heads/master/assets/heroku-backups.png",
             _folder="heroku",
             invite_bot=True,
         )
@@ -147,7 +147,7 @@ class HerokuBackupMod(loader.Module):
         except loader.StopLoop:
             raise
         except Exception:
-            logger.exception("HerokuBackup failed")
+            logger.exception("LidFaxBackup failed")
             await asyncio.sleep(60)
 
     @loader.callback_handler()

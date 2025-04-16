@@ -115,9 +115,9 @@ class Database(dict):
             self._assets, _ = await utils.asset_channel(
                 self._client,
                 "heroku-assets",
-                "🌆 Your Heroku assets will be stored here",
+                "🌆 Your LidFax assets will be stored here",
                 archive=True,
-                avatar="https://raw.githubusercontent.com/coddrago/Heroku/refs/heads/master/assets/heroku-assets.png"
+                avatar="https://raw.githubusercontent.com/coddrago/LidFax/refs/heads/master/assets/heroku-assets.png"
             )
         except ChannelsTooMuchError:
             self._assets = None

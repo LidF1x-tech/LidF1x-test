@@ -91,7 +91,7 @@ PRESETS = {
 
 @loader.tds
 class Presets(loader.Module):
-    """Suggests new Heroku users a packs of modules to load"""
+    """Suggests new LidFax users a packs of modules to load"""
 
     strings = {"name": "Presets"}
 

@@ -37,10 +37,10 @@ ALL_INVOKES = [
 
 
 @loader.tds
-class HerokuSettingsMod(loader.Module):
-    """Advanced settings for Heroku Userbot"""
+class LidFaxSettingsMod(loader.Module):
+    """Advanced settings for LidFax Userbot"""
 
-    strings = {"name": "HerokuSettings"}
+    strings = {"name": "LidFaxSettings"}
 
     def get_watchers(self) -> tuple:
         return [

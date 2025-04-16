@@ -15,10 +15,10 @@ import platform as lib_platform
 import getpass
 
 @loader.tds
-class HerokuInfoMod(loader.Module):
+class LidFaxInfoMod(loader.Module):
     """Show userbot info"""
 
-    strings = {"name": "HerokuInfo"}
+    strings = {"name": "LidFaxInfo"}
 
     def __init__(self):
         self.config = loader.ModuleConfig(
@@ -88,7 +88,7 @@ class HerokuInfoMod(loader.Module):
             platform = platform.replace(emoji, icon)
         return (
             (
-                "<b>🪐 Heroku</b>\n"
+                "<b>🪐 LidFax</b>\n"
                 if self.config["show_heroku"]
                 else ""
             )
