@@ -66,7 +66,7 @@ class LidFaxBackupMod(loader.Module):
             silent=True,
             archive=True,
             avatar="https://files.catbox.moe/vle81m.jpg",
-            _folder="heroku",
+            _folder="LidFax",
             invite_bot=True,
         )
 
