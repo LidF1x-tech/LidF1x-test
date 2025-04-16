@@ -472,7 +472,7 @@ class LoaderMod(loader.Module):
                 "💫 <b>Joined <a"
                 f' href="https://t.me/{channel.username}">{utils.escape_html(channel.title)}</a></b>'
             ),
-            photo="https://imgur.com/a/gWKLn7h.png",
+            photo="https://x0.at/wGb3.mp4",
         )
 
     async def load_module(

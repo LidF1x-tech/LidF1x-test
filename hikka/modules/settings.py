@@ -90,7 +90,7 @@ class CoreMod(loader.Module):
     async def herokucmd(self, message: Message):
         await utils.answer_file(
             message,
-            "https://imgur.com/a/i0Mq22X.png",
+            "https://x0.at/wGb3.mp4",
             self.strings("hikka").format(
                 (
                     utils.get_platform_emoji()
@@ -292,7 +292,7 @@ class CoreMod(loader.Module):
 
         await self.client.send_file(
             message.peer_id,
-            "https://imgur.com/a/HrrFair.png",
+            "https://x0.at/wGb3.mp4",
             caption=self.strings["installation"].format('{}', prefix=self.get_prefix()), reply_to=getattr(message, "reply_to_msg_id", None),)
     
         await message.delete()

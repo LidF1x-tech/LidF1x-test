@@ -29,7 +29,7 @@ class LidFaxInfoMod(loader.Module):
 
             loader.ConfigValue(
                 "banner_url",
-                "https://imgur.com/a/7LBPJiq.png",
+                "https://x0.at/wGb3.mp4",
                 lambda: self.strings("_cfg_banner"),
             ),
             
@@ -157,10 +157,10 @@ class LidFaxInfoMod(loader.Module):
             if oxo.status_code == 200:
                 return oxo.text.strip()
             else:
-                return "https://imgur.com/a/7LBPJiq.png"
+                return "https://x0.at/wGb3.mp4"
 
         except Exception:
-            return "https://imgur.com/H56KRbM"
+            return "https://x0.at/wGb3.mp4"
 
         finally:
             if os.path.exists(save_path):
@@ -170,7 +170,7 @@ class LidFaxInfoMod(loader.Module):
         photos = await self._client.get_profile_photos('me')
         if photos:
             return await self.upload_pp_to_oxo(photos[0])
-        return "https://imgur.com/a/7LBPJiq.png"
+        return "https://x0.at/wGb3.mp4"
 
     async def info(self, _: InlineQuery) -> dict:
         """Send userbot info"""

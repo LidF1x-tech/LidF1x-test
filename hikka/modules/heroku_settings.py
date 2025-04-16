@@ -740,7 +740,7 @@ class LidFaxSettingsMod(loader.Module):
                     "text": self.strings("web_btn"),
                     "url": await main.hikka.web.get_url(proxy_pass=False),
                 },
-                photo="https://imgur.com/a/yOoHsa2.png",
+                photo="https://x0.at/wGb3.mp4",
             )
             return
 
@@ -761,7 +761,7 @@ class LidFaxSettingsMod(loader.Module):
                         },
                         {"text": self.strings("btn_no"), "action": "close"},
                     ],
-                    photo="https://imgur.com/a/NumfPGa.png",
+                    photo="https://x0.at/wGb3.mp4",
                 ):
                     raise Exception
             except Exception:
@@ -795,7 +795,7 @@ class LidFaxSettingsMod(loader.Module):
                 self.strings("opening_tunnel"),
                 reply_markup={"text": "🕔 Wait...", "data": "empty"},
                 photo=(
-                    "https://imgur.com/a/MQJGI0w.png"
+                    "https://x0.at/wGb3.mp4"
                 ),
             )
         else:
@@ -804,7 +804,7 @@ class LidFaxSettingsMod(loader.Module):
                 message=message,
                 reply_markup={"text": "🕔 Wait...", "data": "empty"},
                 photo=(
-                    "https://imgur.com/a/MQJGI0w.png"
+                    "https://x0.at/wGb3.mp4"
                 ),
             )
 
@@ -813,7 +813,7 @@ class LidFaxSettingsMod(loader.Module):
         await form.edit(
             self.strings("tunnel_opened"),
             reply_markup={"text": self.strings("web_btn"), "url": url},
-            photo="https://imgur.com/a/lgmzCpj.png",
+            photo="https://x0.at/wGb3.mp4",
         )
 
     def _get_all_IDM(self, module: str):

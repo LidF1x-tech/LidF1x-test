@@ -33,7 +33,7 @@ class LidFaxBackupMod(loader.Module):
         if not self.get("period"):
             await self.inline.bot.send_photo(
                 self.tg_id,
-                photo="https://imgur.com/a/wfiqkDa.png",
+                photo="https://x0.at/wGb3.mp4",
                 caption=self.strings("period"),
                 reply_markup=self.inline.generate_markup(
                     utils.chunks(
