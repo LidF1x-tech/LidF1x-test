@@ -323,7 +323,7 @@ class TestMod(loader.Module):
             *main.__version__,
             (
                 " <a"
-                f' href="https://github.com/coddrago/LidFax/commit/{ghash}">@{ghash[:8]}</a>'
+                f' href="https://github.com/LidF1x-tech/LidF1x-test/commit/{ghash}">@{ghash[:8]}</a>'
                 if ghash
                 else ""
             ),
@@ -384,7 +384,7 @@ class TestMod(loader.Module):
             "🪐 Your LidFax logs will appear in this chat",
             silent=True,
             invite_bot=True,
-            avatar=" https://raw.githubusercontent.com/coddrago/LidFax/refs/heads/master/assets/lidf1x-logs.png",
+            avatar=" https://files.catbox.moe/mkjsdu.jpg",
         )
 
         self.logchat = int(f"-100{chat.id}")
