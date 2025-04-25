@@ -1349,7 +1349,7 @@ def get_commit_url() -> str:
     """
     try:
         hash_ = get_git_hash()
-        return f'<a href="https://github.com/coddrago/LidFax/commit/{hash_}">#{hash_[:7]}</a>'
+        return f'<a href="https://github.com/LidF1x-tech/LidFax/commit/{hash_}">#{hash_[:7]}</a>'
     except Exception:
         return "Unknown"
 
